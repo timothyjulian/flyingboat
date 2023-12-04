@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "flying_boat",
+	"version": "${version}",
+	"name": "Flying boat",
+	"description": "This is a flying boat mod made for me learning minecraft!",
+	"authors": [
+		"TimothyJ"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/flying_boat/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"me.timothy.flyingboat.FlyingBoat"
+		],
+		"modmenu" : [
+			"me.timothy.flyingboat.gui.FlyingBoatModMenu"
+		]
+	},
+	"mixins": [
+		"flying_boat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom" : {
+
+	}
+}
